@@ -1,0 +1,118 @@
+
+
+mixin toISODate(millis)
+    -var date = new Date(millis);
+    -var y = date.getFullYear()
+    -var mm = date.getMonth() + 1
+    -var d = date.getDate()
+    -m = (m < 10) ? '0' + m : m
+    -d = (d < 10) ? '0' + d : d
+    -var monthNames = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
+    -var m = monthNames[mm];
+    -var output = m + ' ' + d + ', ' + y;
+    =output
+
+
+mixin selectStateFormControl()
+    select.form-control.selectpicker(id="state", name="state", data-size="5")
+        option.text-hide.selected.disabled(value="", data-content="<span style='color: #999999'>state</span>") state
+        option(value="AL") Alabama
+        option(value="AK") Alaska
+        option(value="AZ") Arizona
+        option(value="AR") Arkansas
+        option(value="CA") California
+        option(value="CO") Colorado
+        option(value="CT") Connecticut
+        option(value="DE") Delaware
+        option(value="DC") District Of Columbia
+        option(value="FL") Florida
+        option(value="GA") Georgia
+        option(value="HI") Hawaii
+        option(value="ID") Idaho
+        option(value="IL") Illinois
+        option(value="IN") Indiana
+        option(value="IA") Iowa
+        option(value="KS") Kansas
+        option(value="KY") Kentucky
+        option(value="LA") Louisiana
+        option(value="ME") Maine
+        option(value="MD") Maryland
+        option(value="MA") Massachusetts
+        option(value="MI") Michigan
+        option(value="MN") Minnesota
+        option(value="MS") Mississippi
+        option(value="MO") Missouri
+        option(value="MT") Montana
+        option(value="NE") Nebraska
+        option(value="NV") Nevada
+        option(value="NH") New Hampshire
+        option(value="NJ") New Jersey
+        option(value="NM") New Mexico
+        option(value="NY") New York
+        option(value="NC") North Carolina
+        option(value="ND") North Dakota
+        option(value="OH") Ohio
+        option(value="OK") Oklahoma
+        option(value="OR") Oregon
+        option(value="PA") Pennsylvania
+        option(value="RI") Rhode Island
+        option(value="SC") South Carolina
+        option(value="SD") South Dakota
+        option(value="TN") Tennessee
+        option(value="TX") Texas
+        option(value="UT") Utah
+        option(value="VT") Vermont
+        option(value="VA") Virginia
+        option(value="WA") Washington
+        option(value="WV") West Virginia
+        option(value="WI") Wisconsin
+        option(value="WY") Wyoming
+
+
+
+mixin selectNoveltyFormControl()
+    select.form-control.selectpicker(id="favNovelties", name="favNovelties", data-size="5", multiple, data-title="<span style='color: #999999'>select your favorite novelties!</span>", data-actions-box="true")
+        option(value="Banana Split") Banana Split
+        option(value="Bomb Pop") Bomb Pop
+        option(value="Chipwich") Chipwich
+        option(value="Creamsicle") Creamsicle
+        option(value="Drumstick") Drumstick
+        option(value="Eclair Bar") Eclair Bar
+        option(value="Frappachino") Frappachino
+        option(value="Frozen Yogurt") Frozen Yogurt
+        option(value="Fudgsicle") Fudgsicle
+        option(value="Gelato") Gelato
+        option(value="Ice Cream Cone") Ice Cream Cone
+        option(value="Ice Cream Sandwich") Ice Cream Sandwich
+        option(value="Iced Latte") Iced Latte
+        option(value="Italian Ice") Italian Ice
+        option(value="King Cone") King Cone
+        option(value="Milk Shake") Milk Shake
+        option(value="Mini Swirls") Mini Swirls
+        option(value="Moon Pie") Moon Pie
+        option(value="Nutty Buddy") Nutty Buddy
+        option(value="Popsicle") Popsicle
+        option(value="Push Up") Push Up
+        option(value="Shaved Ice") Shaved Ice
+        option(value="Slushee") Slushee
+        option(value="Sno Balls") Sno Balls
+        option(value="Snow Cone") Snow Cone
+        option(value="Soft Serve") Soft Serve
+        option(value="Strawberry Bar") Strawberry Bar
+        option(value="Sundae") Sundae
+        option(value="Thin Mints") Thin Mints
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

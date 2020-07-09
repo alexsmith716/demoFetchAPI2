@@ -1,0 +1,67 @@
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 1px;
+}
+
+body > .container {
+  padding: 24px 15px 0;
+}
+
+.container .text-muted {
+  /*margin: 20px 0;*/
+}
+
+.footer > .container {
+  /*padding-right: 15px;
+  padding-left: 15px;*/
+}
+
+
+.navbar-default .navbar-brand  {
+  background: #f8f8f8;
+  outline: 0 !important;
+  border: none;
+  box-shadow: none;
+}
+
+/*
+input:focus {
+    background-color: yellow;
+}
+
+select:focus {
+    background-color: yellow;
+}
+
+*::-webkit-input-placeholder {
+    color: red;
+}
+*:-moz-placeholder {
+    color: red;
+}
+*::-moz-placeholder {
+    color: red;
+}
+*:-ms-input-placeholder {
+    color: red;
+}
+
+.placeholderXXX {
+  color: red;
+}
+
+select {
+    color:#00900;
+}
+
+select option:first-child{color: red; display: none;}
+select option{color: #009900;} 
+*/
+
+@import "reset.css";
+@import "core.css";
